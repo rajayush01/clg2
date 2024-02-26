@@ -1,0 +1,671 @@
+* {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'IBM Plex Mono', monospace;
+    overflow-x:hidden ;
+}
+
+:root {
+    --bg-color: black;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+body {
+
+    color: var(--text-color);
+}
+
+
+
+body {
+    background-image: linear-gradient( 111.4deg, rgba(7,7,9,1) 6.5%, rgba(27,24,113,1)93.2%);
+}
+:root {
+    --navbar-bg-color: hsl(0, 0%, 1%);
+      --navbar-text-color: hsl(0, 0%, 85%);
+      --navbar-text-color-focus: white;
+      --navbar-bg-contrast: hsl(0, 0%, 25%);
+      --first-color: hsl(38, 92%, 58%);
+    --first-color-light: hsl(38, 100%, 78%);
+    --first-color-alt: hsl(32, 75%, 50%);
+    --second-color: hsl(195, 75%, 52%);
+    --dark-color: hsl(212, 40%, 12%);
+    --white-color: hsl(212, 4%, 95%);
+    --body-color: hsl(212, 42%, 15%);
+    --container-color: hsl(212, 42%, 20%);
+    --text-color: #fff;
+    --main-color: #0ef;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 72px;
+    padding: 2rem 9%;
+    background-color: var(--navbar-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    overflow-y: hidden;
+  }
+  
+  .header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+  }
+  
+  .logo img{
+    width: 90px;
+    color: var(--text-color);
+    
+    cursor: default;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    overflow-y: hidden;
+  }
+  .navbar a {
+    display: flex;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 2rem;
+    margin: 0.1em;
+    padding: 0.1em 0.9em;
+    width: 100%;
+    height: 100%;
+    word-spacing: 0.5px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow-y: hidden;
+  }
+  
+  /* .navbar a:hover,
+  .navbar a:active {
+    color: var(--main-color);
+  } */
+  
+  .navbar a:is(:focus, :hover){
+    color: var(--navbar-text-color-focus);
+    background-color: var(--navbar-bg-contrast);
+  }
+
+  .dropbtn1 {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    
+  }
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content1 a:hover {background-color: #090808}
+  
+  .dropdown1:hover .dropdown-content1 {
+    display: block;
+  }
+  
+  .dropdown1:hover .dropbtn1 {
+    background-color: var(--navbar-bg-contrast);
+    
+  }
+  
+  #menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+  }
+
+.style{
+    font-size: 100px;
+    margin-left: 10px;
+    padding-top: 200px;
+    flex-wrap: wrap;
+}
+
+.first{
+    display: flex;
+    justify-content: baseline;
+    place-items: center;
+}
+
+.uprr{
+    margin-left: 50px;
+    padding-top: 150px;
+    width:500px;
+}
+.pass-details {
+    padding-top: 100px;
+}
+
+.sell {
+    padding-left: 350px;
+    padding-bottom: 70px;
+}
+
+.sell-pass h1{
+    align-items: center; 
+    justify-content: center;
+    padding-left: 270px;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+.pricing-table1 {
+    width: 70%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.pricing-table1 tr{
+    font-size: 20px;
+}
+
+.pricing-table1 th,
+.pricing-table1 td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.pricing-table1 th {
+    background-color: #000080;
+    /* Navy blue */
+    color: #fff;
+}
+
+.sold-out {
+    color: red;
+    font-weight: bold;
+}
+
+.note {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.registration-button {
+    background-color: #000080;
+    /* Navy blue */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.price {
+    padding-left: 270px;
+}
+
+.pricing-table {
+    width: 80%;
+    border-collapse: collapse;
+    align-items: center;
+    justify-content: center;
+    
+}
+.features{
+    padding-left: 10px;
+}
+
+.pricing-table tr{
+    font-size: 20px;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.pricing-table th {
+    background-color: #000080;
+    /* Navy blue */
+    color: #fff;
+}
+
+.checkmark {
+    color: green;
+}
+
+.crossmark {
+    color: red;
+}
+
+.registration-button {
+    background-color: #000080;
+    /* Navy blue */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.pass-feature h1{
+    align-items: center; 
+    justify-content: center; 
+    padding-left: 360px;
+    padding-bottom: 50px; 
+    font-size: 40px;
+}
+
+.register1 {
+    padding-left: 310px;
+}
+
+.register2 {
+    padding-left: 390px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+  }
+  
+  .details {
+    margin-right: 240px;
+  }
+  
+  .reach {
+    margin-right: 150px;
+  }
+  
+  .social-media a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  
+  
+  .social-media a:hover {
+    color: rgb(38, 212, 38);
+  }
+  
+  .footer {
+    margin-top: auto;
+  }
+  
+/* Your existing CSS... */
+
+/* Media query for tablets and smaller desktops */
+
+@media only screen and (max-width: 1340px) {
+
+    
+    .header {
+        padding: 1rem 5%;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    .title img{
+        /* display: flex;
+        flex-direction: column;
+        gap: 100px; */
+        margin-top: -100px;
+
+    }
+    .title
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar a {
+        margin-left: 2rem;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .sell {
+        padding-left: 100px;
+    }
+    .sell-pass {
+        margin-left: 180px;
+    }
+    .pass-details {
+        padding-top: 50px;
+    }
+    .pricing-table1 {
+        width: 70%;
+        margin-left: 160px;
+    }
+    .note{
+        margin-left: 16rem;
+    }
+    .price {
+        margin-left: 70px;
+    }
+    .pass-feature h1{
+        margin-left: -16rem;
+    }
+    .pricing-table{
+        margin-left: 0.5rem;
+    }
+    .features{
+        margin-right: 150px;
+    }
+    .register1 {
+        margin-left: 16rem;
+    }
+    .register2 {
+        margin-left: -150px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+
+    
+    .header {
+        padding: 1rem 5%;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    .title img{
+        /* display: flex;
+        flex-direction: column;
+        gap: 100px; */
+        margin-top: -100px;
+
+    }
+    .title
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar a {
+        margin-left: 2rem;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .sell {
+        padding-left: 20px;
+    }
+    .sell-pass {
+        margin-left: 120px;
+    }
+    .pass-details {
+        padding-top: 50px;
+    }
+    .pricing-table1 {
+        width: 70%;
+        margin-left: 17rem;
+    }
+    .note{
+        margin-left: 17rem;
+    }
+    .price {
+        padding-left: 200px;
+    }
+    .pass-feature h1{
+        margin-left: -16rem;
+    }
+    .pricing-table{
+        margin-left: 0.5rem;
+    }
+    .register1 {
+        margin-left: 7rem;
+    }
+    .register2 {
+        margin-left: -150px;
+    }
+}
+
+@media only screen and (max-width: 1047px){
+    .register1{
+        margin-left: 100px;
+    }
+    .pass-feature h1{
+        margin-left: -25rem;
+    }
+    .features{
+        margin-left: -8rem;
+    }
+    .pricing-table{
+        width:95%;
+    }
+    .register2{
+        margin-left: -200px;
+    }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 873px) {
+    .header {
+        padding: 1rem 5%;
+        height: 15%;
+    }
+
+    .style{
+        font-size: 8rem;
+    }
+
+    .uprr{
+        /* display: flex;
+        flex-direction: column;
+        gap: 100px;  */
+        margin-top: -500px;
+
+    }
+    .title
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img {
+        width: 50px;
+    }
+    
+    #menu-icon {
+        display: block;
+    }
+    .sell {
+        margin-right: 50px;
+    }
+    .sell-pass h1{
+        margin-left:-90px;
+        font-size: 40px;
+    }
+    .pass-details {
+        padding-top: 30px;
+    }
+    .pricing-table1 {
+        width: 60%;
+    }
+    .pricing-table1 tr{
+        font-size: 15px;
+    }
+    .pricing-table tr{
+
+        font-size: 15px;
+    }
+    .price {
+        
+        margin-left: -8rem;
+    }
+    .register1{
+        margin-left:auto;
+    }
+    .register2 {
+        margin-left: -15rem;
+    }
+    footer {
+        padding: 10px;
+    }
+    .social-media a {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 771px){
+    
+    
+    .navbar a{
+        font-size: 13px;
+       
+    }
+    .title
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sell-pass h1{
+        margin-left: -130px;
+    }
+    .register1{
+        margin-left: -40px;
+    }
+    .pass-feature h1{
+        margin-left: -220px;
+    }
+    .features{
+        margin-right: -10px;
+    }
+    .register2{
+        margin-left: -190px;
+    }
+    
+}
+
+@media only screen and (max-width: 711px){
+    .style{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 655px){
+    .logo img{
+        display: none;
+    }
+    .navbar {
+        margin-right: 4rem;
+    }
+
+    .navbar a{
+        font-size: 11px;
+    }
+    .style{
+        font-size: 5rem;
+    }
+    .uprr{
+        height: 300px;
+        width: 200px;
+        margin-left: -1px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    h4 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+  }
+  @media only screen and (max-width: 595px){
+    .header{
+        .navbar {
+            margin-right: -3rem;
+            margin-left: -5.3rem;
+        }
+    
+        .navbar a{
+            font-size: 14px;
+        }
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .buttons {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .Check:hover {
+      transform: scale(1);
+    }
+  
+    .Check {
+      margin: 2%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Check:hover {
+      transform: scale(1);
+    }
+  
+  }
+
+
+/*752
